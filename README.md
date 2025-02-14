@@ -8,4 +8,4 @@ Check back later for updates to this project as it is in its nascent stages.
 
 ![Flowveyour Art](assets/flowveyor.webp)  
 
-![](https://github.com/Photon1c/Flowveyor/raw/refs/heads/main/assets/supply_chain.mp4)
+[QWEN Generated Video](https://github.com/Photon1c/Flowveyor/raw/refs/heads/main/assets/supply_chain.mp4)
