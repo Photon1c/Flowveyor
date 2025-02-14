@@ -2,7 +2,7 @@
 
 ![Flowveyor Logo](assets/flowveyor_logo.svg)
 
-Flowveyor is a visualization tool for tracking the flow of production and consumption across the supply chain timeline, focusing on abstract flow movements.
+Flowveyor is a visualization tool for tracking the flow of production and consumption across the supply chain timeline, focusing on abstract flow movements along a conveyor belt.  
 
 Check back later for updates to this project as it is in its nascent stages.
 
