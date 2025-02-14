@@ -6,4 +6,6 @@ Flowveyor is a visualization tool for tracking the flow of production and consum
 
 Check back later for updates to this project as it is in its nascent stages.
 
-![flowveyor.png](assets/flowveyor.webp)
+![Flowveyour Art](assets/flowveyor.webp)  
+
+![Flowveyor Movie](assets/supply_chain.mp4)
