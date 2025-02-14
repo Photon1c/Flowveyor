@@ -1,0 +1,38 @@
+<svg 
+    version="1.1" 
+    width="400" 
+    height="120" 
+    viewBox="0 0 400 120" 
+    xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Title for accessibility -->
+  <title>Flowveyor Logo</title>
+
+  <!-- Conveyor belt (rounded rectangle) -->
+  <rect 
+    x="20" 
+    y="60" 
+    width="360" 
+    height="10" 
+    rx="5" 
+    fill="#3D9970" 
+  />
+
+  <!-- Abstract shapes (circles) -->
+  <circle cx="100" cy="55" r="5" fill="#FF851B" />
+  <circle cx="140" cy="55" r="5" fill="#FF851B" />
+  <circle cx="180" cy="55" r="5" fill="#FF851B" />
+
+  <!-- Text label -->
+  <text 
+    x="200" 
+    y="40" 
+    fill="#3D9970" 
+    font-family="Montserrat, sans-serif" 
+    font-size="24" 
+    font-weight="bold" 
+    text-anchor="middle"
+  >
+    FLOWVEYOR
+  </text>
+</svg>
