@@ -8,7 +8,7 @@ Check back later for updates to this project as it is in its nascent stages.
 
 ## 2.17.25 Update - 🐕‍🦺 Service Workflow Simulator
 
-[Service Workflow Simulator Python Script](scripts/service_workflow_sim.py) - Given defined user inputs this script produces a three dimensional chart visualizing the workflow of the desired parameters.  [Service Workflow Notebook](scripts/Service-Workflow-Visualizer.py) also now available.
+[Service Workflow Simulator Python Script](scripts/service_workflow_sim.py) - Given defined user inputs this script produces a three dimensional chart visualizing the workflow of the desired parameters.  [Service Workflow Notebook](scripts/Service-Workflow-Visualizer.ipynb) also now available.
 
 ## Valentine's Day Update 💝  
 
