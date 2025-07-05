@@ -1,0 +1,6 @@
+{
+  "total_work_minutes": 450,
+  "min_task_duration": 6,
+  "max_task_duration": 15,
+  "task_names": ["Closing Case", "Processing Discovery Bucket", "Processing Fax", "Teleconference", "Opening Case", "Conflict Check", "Additional Administrative"]
+}
