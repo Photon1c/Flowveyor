@@ -6,6 +6,10 @@ Flowveyor is a visualization tool for tracking the flow of production and consum
 
 Check back later for updates to this project as it is in its nascent stages.  
 
+## 07.15.25 Update - 🐝 💼 Reflexive Work Engine scripts available
+
+[The mobility ops](mobilityops/index.md) directory now contains some sample terminal dashboards deployed to monitor workflows of different levels and types. Inspired from the Air Traffic CLI repository found [here](https://github.com/Photon1c/airtraffic_cli). Check back later as it is updated with new scripts!  
+
 ## 2.17.25 Update - 🐕‍🦺 Service Workflow Simulator
 
 [Service Workflow Simulator Python Script](scripts/service_workflow_sim.py) - Given defined user inputs this script produces a three dimensional chart visualizing the workflow of the desired parameters.  [Service Workflow Notebook](scripts/Service-Workflow-Visualizer.ipynb) also now available.
