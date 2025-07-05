@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#Vanilla template for worklow terminal dashboard
 import json
 import random
 import time
