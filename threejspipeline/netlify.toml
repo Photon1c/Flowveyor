@@ -1,7 +1,8 @@
 [build]
-  publish = "workflowpipeline"
+  publish = "threejspipeline/dist"
+  command = "npm run build"
 
 [[redirects]]
   from = "/"
-  to = "threejspipeline/index.html"
+  to = "/index.html"
   status = 200 
