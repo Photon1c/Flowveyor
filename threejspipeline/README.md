@@ -8,7 +8,7 @@ This is a vanilla Three.js app (no framework required) for simulating a softbody
 
 This app is live [here](https://workflowpipeline.netlify.app/)
 
-[sample](media/sample.gif)
+![sample](media/sample.gif)
 
 ### Features
 
