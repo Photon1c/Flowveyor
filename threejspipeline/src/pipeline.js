@@ -949,7 +949,7 @@ gitLink.style.boxShadow = '0 2px 8px #0006';
 document.body.appendChild(gitLink);
 
 const titleBanner = document.createElement('div');
-titleBanner.innerText = 'Pipeline Sim';
+titleBanner.innerText = 'Workflow Pipeline Sim';
 titleBanner.style.position = 'absolute';
 titleBanner.style.top = '48px';
 titleBanner.style.right = '12px';
