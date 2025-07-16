@@ -1,0 +1,7 @@
+[build]
+  publish = "workflowpipeline"
+
+[[redirects]]
+  from = "/"
+  to = "threejspipeline/index.html"
+  status = 200 
