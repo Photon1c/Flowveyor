@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+let totalProcessedBallCount = 0;
 // --- Scene Setup ---
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0xffffff); // White background
@@ -276,6 +277,8 @@ resetBtn.onclick = () => {
   intakeQueue.length = 0;
   intakeTimer = 0;
   setUIEnabled(true); // Ensure controls are re-enabled after reset
+  totalProcessedBallCount = 0;
+  processedCounter.innerText = 'Processed: 0';
 };
 
 // --- Bulge Intensity Slider ---
@@ -775,6 +778,7 @@ function clusterHoseUnits() {
           if (idx !== -1) flowUnits.splice(idx, 1);
           mesh.droppedAt = performance.now();
           totalProcessedBallCount++;
+          processedCounter.innerText = 'Processed: ' + totalProcessedBallCount;
         }
         cluster.dropIdx++;
         setTimeout(dropNextBall, 40); // Stagger drop by 40ms
@@ -978,34 +982,29 @@ processedCounter.style.display = 'none'; // Hide initially
 
 document.body.appendChild(processedCounter);
 
-async function updateProcessedCounter() {
-  try {
-    const resp = await fetch('http://localhost:5001/output/ball_count.csv?_=' + Date.now());
-    if (!resp.ok) {
-      processedCounter.innerText = 'Processed: 0';
-      return;
-    }
-    const text = await resp.text();
-    // Get last non-empty line
-    const lines = text.trim().split('\n').filter(l => l.trim());
-    const last = lines[lines.length - 1];
-    const parts = last.split(',');
-    const count = parts[1] ? parseInt(parts[1], 10) : 0;
-    processedCounter.innerText = 'Processed: ' + count;
-  } catch (e) {
-    processedCounter.innerText = 'Processed: 0';
-  }
-}
-setInterval(updateProcessedCounter, 30000);
-updateProcessedCounter();
+// Remove backend fetch and interval for processedCounter
+// Use local variable totalProcessedBallCount to update processedCounter
 
-setTimeout(() => {
-  titleBanner.style.opacity = '0';
-  setTimeout(() => {
-    titleBanner.style.display = 'none';
-    processedCounter.style.display = 'block'; // Show processed counter after title hides
-  }, 1200);
-}, 15000);
+// Remove async function updateProcessedCounter and its setInterval
+// Instead, after incrementing totalProcessedBallCount, update processedCounter.innerText
+
+// 1. Remove or comment out:
+// async function updateProcessedCounter() { ... }
+// setInterval(updateProcessedCounter, 30000);
+// updateProcessedCounter();
+
+// 2. After totalProcessedBallCount++ in dropNextBall, add:
+processedCounter.innerText = 'Processed: ' + totalProcessedBallCount;
+
+// 3. On reset, set totalProcessedBallCount = 0 and update processedCounter.innerText
+resetBtn.onclick = () => {
+  // ... existing code ...
+  totalProcessedBallCount = 0;
+  processedCounter.innerText = 'Processed: 0';
+  // ... existing code ...
+};
+
+// 4. Show processedCounter after titleBanner fades as before (no change needed)
 
 // --- Auto Toggle Switch ---
 const autoToggleLabel = document.createElement('label');
@@ -1405,7 +1404,6 @@ function animatePoolBalls(delta, balls, poolMesh, color, yOffset = 0) {
 }
 
 // --- Analytics: Track total processed ball count and send to backend every 30s ---
-let totalProcessedBallCount = 0;
 function sendBallCountToBackend() {
   fetch('http://localhost:5001/log_ball_count', {
     method: 'POST',
