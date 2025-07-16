@@ -60,7 +60,7 @@ This is a vanilla Three.js app (no framework required) for simulating a softbody
    - Run `npm install` in the project root (where `package.json` is located).
 2. **Run the app locally:**
    - Run `npm run dev` (if using Vite or similar dev server).
-   - Open `http://localhost:5173/AGIworld/pipeline.html` (or the path shown in your terminal) in your browser.
+   - Open `http://localhost:5173` (or the path shown in your terminal) in your browser.
 
 #### Deploy to Netlify
 
