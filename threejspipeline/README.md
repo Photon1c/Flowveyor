@@ -72,7 +72,7 @@ This is a vanilla Three.js app (no framework required) for simulating a softbody
 
 ---
 
-For now, all parameters are set within the app UI. For development or extension, see `pipeline.js` and `pipeline.html`.
+For now, all parameters are set within the app UI. For development or extension, see `pipeline.js` and `index.html`.
 
 ---
 
