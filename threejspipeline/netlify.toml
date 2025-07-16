@@ -1,5 +1,5 @@
 [build]
-  publish = "threejspipeline/dist"
+  publish = "/dist"
   command = "npm run build"
 
 [[redirects]]
