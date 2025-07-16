@@ -4,7 +4,11 @@
 
 ### Project Description
 
-This is a vanilla Three.js app (no framework required) for simulating a softbody pipeline (hose) with interactive, physically plausible flow and bulging effects. It is designed for future extensibility and can serve as a base for more complex data flow or visualization projects.
+This is a vanilla Three.js app (no framework required) for simulating a softbody pipeline (hose) with interactive, physically plausible flow and bulging effects. It is designed for future extensibility and can serve as a base for more complex data flow or visualization projects.  
+
+This app is live [here](https://workflowpipeline.netlify.app/)
+
+[sample](media/sample.gif)
 
 ### Features
 
