@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/"
-  to = "/index.html"
+  to = "threejspipeline/index.html"
   status = 200 
