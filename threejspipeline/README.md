@@ -66,7 +66,7 @@ This is a vanilla Three.js app (no framework required) for simulating a softbody
 
 1. **Add a `netlify.toml` file** (see below).
 2. **Push your code to GitHub.**
-3. **Connect your repo to Netlify** and set the publish directory to the project root or `AGIworld` if you want to serve from there.
+3. **Connect your repo to Netlify** and set the publish directory to the project root.
 4. **Set the build command** to `npm run build` (if using Vite) or leave blank for static.
 5. **Your site will be live at your Netlify URL!**
 
