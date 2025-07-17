@@ -6,6 +6,10 @@ Flowveyor is a visualization tool for tracking the flow of production and consum
 
 Check back later for updates to this project as it is in its nascent stages.  
 
+## 07.17.25 Update - 🧪 Three.js Workflow Pipeline
+
+Now [live](threejspipeline) 🟢 
+
 ## 07.15.25 Update - 🐝 💼 Reflexive Work Engine scripts available
 
 [The mobility ops](mobilityops/index.md) directory now contains some sample terminal dashboards deployed to monitor workflows of different levels and types. Inspired from the Air Traffic CLI repository found [here](https://github.com/Photon1c/airtraffic_cli). Check back later as it is updated with new scripts!  
